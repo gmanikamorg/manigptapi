@@ -7,7 +7,18 @@ authors = [
     { name = "manikamg", email = "36034033+manikamg@users.noreply.github.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "alembic>=1.20.0",
+    "fastapi>=0.143.2",
+    "groq>=1.7.0",
+    "psycopg[binary]>=3.3.6",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic[email]>=2.14.1",
+    "pyjwt>=2.15.1",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.1.4",
+    "uvicorn>=0.54.0",
+]
 
 [project.scripts]
 manigptapi = "manigptapi:main"
